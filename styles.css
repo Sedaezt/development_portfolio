@@ -1,14 +1,23 @@
-/* Reset some default styles */
+@font-face {
+    font-family: 'SUNROLL';
+    src: url('fonts/SUNROLL.TTF') format('truetype'); /* Vervang 'MyCustomFont.ttf' door de naam van jouw fontbestand */
+}
+
+@font-face {
+    font-family: 'simply rounded';
+    src: url('fonts/SIMPLY\ ROUNDED.TTF') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "sunroll";
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
     margin: 0;
     padding: 0;
@@ -18,10 +27,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(276, 79%, 24%);
+    background-color: #000000;
     color: #fff;
     padding: 10px 20px;
+
 }
+
+.header h1 {
+    width: 100%;
+    margin-top: 75px;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.05px;
+    line-height: 1;
+    text-align: center;
+    color:#ffffff;
+    background-color: transparent;
+}
+
+#changing-text {
+    color: hsl(276, 44%, 55%);
+} 
 
 .logo {
     height: 40px;
@@ -64,6 +90,73 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+.img_aboutme {
+    max-width: 700px;
+    max-height: 280px;
+    margin: 30px 6%;
+    border-radius: 18px;
+    opacity: 50%;
+
+}
+
+.short_about_me {
+    font-size: 18px;
+    color: white;
+    width: 420px;
+    text-align: left;
+    font-family: 'simply rounded';
+}
+
+#about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.more {
+    font-family: 'simply rounded';
+    align-self: flex-start;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: hsl(276, 44%, 55%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 30px;  
+}
+
+.centered {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 24px;
+}
+
+.socials {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.media:hover {
+    color: hsl(276, 44%, 55%);
+}
+
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -76,7 +169,7 @@ nav ul li a {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.9); /* semi-transparent black background */
+        background-color: rgba(0, 0, 0, 0.9); 
         text-align: center;
         padding-top: 100px;
     }

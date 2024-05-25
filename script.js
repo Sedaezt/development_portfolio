@@ -10,3 +10,23 @@ menuToggle.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     nav.classList.remove('active');
 });
+
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
+
+const texts = ["designs", "develops"];
+let index = 0;
+
+function changeText() {
+    index = (index + 1) % texts.length;
+    document.getElementById("changing-text").textContent = texts[index];
+}
+
+setInterval(changeText, 2000);
+
+
+
