@@ -2,6 +2,13 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav ul');
 const closeMenu = document.querySelector('.close-menu');
+const logo = document.querySelector('.logo');
+
+// logo.addEventListener('click', function(e) {
+    
+
+// });
+
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
